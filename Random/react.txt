@@ -1,0 +1,7 @@
+The state object is where you store property values that belongs to the component.
+When the state object changes, the component re-renders.
+
+componentDidMount()--componentDidMount() is invoked immediately after a component is mounted
+
+componentDidUpdate(prevProps, prevState, snapshot)--
+componentWillUnmount()

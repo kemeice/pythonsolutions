@@ -1,0 +1,53 @@
+ sudo -i -u postgres - commect to post gress 
+ 
+ If you use column aliases in the SELECT clause, you cannot use them in the WHERE clause.
+ 
+ Note that you can use the != operator and <> operator interchangeably because they are equivalent.
+ 
+ IN	Return true if a value matches any value in a list
+ 
+ BETWEEN	Return true if a value is between a range of values
+ 
+ IS NULL	Return true if a value is NULL
+ 
+ SELECT select_list
+FROM table_name
+LIMIT row_count OFFSET row_to_skip; here you would enter the amont of numbers you want to skip
+
+The FETCH clause is functionally equivalent to the LIMIT clause
+SELECT
+    film_id,
+    title
+FROM
+    film
+ORDER BY
+    title 
+FETCH FIRST ROW ONLY;
+
+for like     Percent sign ( %) matches any sequence of zero or more characters.
+    Underscore sign ( _)  matches any single character.
+	
+inner join compares the values in two table and if the values are equal it creates that contains colum from both table .
+
+ In the left join context, the first table is called the left table and the second table is called the right table. 	
+ 
+ the left join takes the left table looks where the values are eqaul to the left table if not if creates a empty row  for the set.
+ left outter join will select rows that dont have a matthing row is the where clas
+ 
+ The full outer join or full join returns a result set that contains all rows from both left and right tables, 
+ with the matching rows from both sides if available. In case there is no match, the columns of the table will be filled with NULL.
+ 
+ The PostgreSQL ANY operator compares a value to a set of values returned by a subquery.
+ he EXISTS operator is a boolean operator that tests for existence of rows in a subquery.
+ 
+ INSERT INTO links (url, name)
+VALUES('http://www.postgresql.org','PostgreSQL') 
+RETURNING id; -- to get the insert id and the * to get everthing that was inserted.
+
+DELETE FROM table_name1
+USING table_expression
+WHERE condition
+RETURNING returning_columns;
+
+create function
+selection function name 
